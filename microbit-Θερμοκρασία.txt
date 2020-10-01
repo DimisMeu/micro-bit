@@ -1,0 +1,7 @@
+Θερμοκρασια = 0
+
+def on_forever():
+    global Θερμοκρασια
+    Θερμοκρασια = input.temperature()
+    basic.show_number(Θερμοκρασια)
+basic.forever(on_forever)

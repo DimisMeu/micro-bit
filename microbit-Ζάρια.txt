@@ -1,0 +1,11 @@
+def on_gesture_shake():
+    basic.show_number(randint(1, 6))
+    basic.pause(1000)
+    basic.show_string("-")
+    basic.show_number(randint(1, 6))
+    basic.pause(1000)
+    basic.clear_screen()
+    basic.show_icon(IconNames.ANGRY)
+input.on_gesture(Gesture.SHAKE, on_gesture_shake)
+
+basic.show_icon(IconNames.CHESSBOARD)

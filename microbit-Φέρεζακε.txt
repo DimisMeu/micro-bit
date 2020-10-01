@@ -1,0 +1,28 @@
+"""
+
+το ηχείο θα μπεί το μαύρο στο GND και το κόκκινο στο Ρ0
+
+"""
+basic.show_string("Frere Jacques")
+music.set_tempo(120)
+for index in range(2):
+    music.play_tone(262, music.beat(BeatFraction.WHOLE))
+    music.play_tone(294, music.beat(BeatFraction.WHOLE))
+    music.play_tone(330, music.beat(BeatFraction.WHOLE))
+    music.play_tone(262, music.beat(BeatFraction.WHOLE))
+for index2 in range(2):
+    music.play_tone(330, music.beat(BeatFraction.WHOLE))
+    music.play_tone(349, music.beat(BeatFraction.WHOLE))
+    music.play_tone(392, music.beat(BeatFraction.DOUBLE))
+for index3 in range(2):
+    music.play_tone(392, music.beat(BeatFraction.HALF))
+    music.play_tone(440, music.beat(BeatFraction.HALF))
+    music.play_tone(392, music.beat(BeatFraction.HALF))
+    music.play_tone(349, music.beat(BeatFraction.HALF))
+    music.play_tone(330, music.beat(BeatFraction.WHOLE))
+    music.play_tone(262, music.beat(BeatFraction.WHOLE))
+for index4 in range(2):
+    music.play_tone(262, music.beat(BeatFraction.WHOLE))
+    music.play_tone(196, music.beat(BeatFraction.WHOLE))
+    music.play_tone(262, music.beat(BeatFraction.DOUBLE))
+basic.show_string("The end")
